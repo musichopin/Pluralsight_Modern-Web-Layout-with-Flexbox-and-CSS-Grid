@@ -1,0 +1,51 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+body {
+    padding: 1em;
+}	
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.media-item-title {
+    grid-area: title;
+    /*we can also create named grid areas besides named grid lines.
+    grid area: any area on a grid contained by 4 grid lines.
+    in order to create a named grid area we need to define the named 
+    grid area on our elements within the grid-area property before we 
+    define our grid*/
+}
+
+.media-item-thumb {
+    grid-area: thumbnail;
+}
+
+.media-item-content {
+    grid-area: content;
+}
+
+.media-container {
+    display: grid;
+    grid: 8em 1em 1fr / auto 1em auto; /*grid-template-column / grid-template-rows*/
+    /*3x3*/
+    grid-template-areas: "title title title" 
+                        /*we want our title section to be on its own row 
+                        stretching the width of the grid. by repeating its 
+                        name for each column we are telling the browser we want
+                        the item to span this grid tracks*/
+                         ". . ." /*adding empty row for horizontal gutter.
+                         with spaces in-between periods browser gets where 
+                         the grid track begins and ends*/
+                         "thumbnail . content";
+                         /*thumbnail and content take up 1 column with a space in-between*/
+                         /*we use our custom named grid areas*/
+}
