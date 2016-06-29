@@ -20,7 +20,7 @@ h1 {
 .buttons {
 	/* flexbox is also good for handling containers 
 	that have unknown no of items in them. without flexbox 
-    we would have to use more css for moderators  */
+    we would have to use more css properties for moderators (for alignment) */
     display: flex;
 }
 
