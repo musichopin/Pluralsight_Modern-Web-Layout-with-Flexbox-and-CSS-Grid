@@ -7,9 +7,9 @@ body {
 
 .grid-container {
 	border: solid 4px #000;
-    display: grid; /*this container spreads the entire width just like a block level element would. 
-    also forces the grid items to take only the space they need and stack on top of each other*/
-	/*display: inline-grid;*/ /*with inline-grid our grid container takes as much space as our grid items require*/
+    display: grid; /*this container spreads the entire width just like a 
+    block level element would*/
+	/*display: inline-grid;*/ 
 }
 
 .grid-item {
@@ -50,6 +50,6 @@ body {
 }
 
 .grid-item strong {
-	display: block; /*yeni satıra başlar*/
+	display: block;
 	font-size: 130%;  
 }	

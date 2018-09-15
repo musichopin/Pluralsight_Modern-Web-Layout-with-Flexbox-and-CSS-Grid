@@ -1,3 +1,5 @@
+/* box alignment is a specification independent of flexbox and grid,
+which is intended to generalize the alignment of items within their containers*/
 html,
 body {
 	padding: 0;
@@ -5,16 +7,13 @@ body {
 	font-family: arial, sans-serif;
 }
 
-/* box alignment is a specification independent of flexbox and grid,
-which is intended to generalize the alignment of items within their containers.
-Alignment Features not implemented by most browsers yet.
-Similar to the values of flexbox, that's why cut short */
 .grid-container {
 	border: solid 4px #000;
     display: inline-grid;
     height: 30em;
     grid: repeat(4, 8.5em) / repeat(2, 10em);
-    align-content: center;
+    align-content: center; 
+/*align-items: center; wud work too*/
     justify-items: center;
 }
 /*properties: justifty-content, justify-items, align-content, align-items
@@ -53,8 +52,9 @@ align: vertically aligns the items*/
 .grid-item-06 {
 	background-color: #675BA7;
     align-self: end;
-    /*justify-self: end; */
-    /*we can align items individually as well*/
+    /*justify-self: end; */ 
+/*align-self ve justify-self ile grid-container'da kullanılan align-items 
+ve justify-items birbirinin dengidir*/    
 }
 
 .grid-item-07 {

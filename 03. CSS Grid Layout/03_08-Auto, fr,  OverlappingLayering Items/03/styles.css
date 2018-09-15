@@ -8,7 +8,8 @@ body {
 .grid-container {
 	border: solid 4px #000;
     display: inline-grid;
-    grid: 8em repeat(3, 1em 8em) / 8em 1em 8em
+    grid: 8em 1em 8em / 8em repeat(3, 1em 8em);
+
 }
 
 .grid-item {
@@ -28,10 +29,9 @@ body {
 
 .grid-item-02 {
 	background-color: #9BC850;
-    opacity: 0.8;
-    grid-area: 1 / 1 / 4 / 6; /*overlaps*/
-    /*we can overlap and layer items on top of one another*/
-    z-index: 10; /*layers over the items it overlaps*/	
+    opacity: 0.9;
+    grid-area: 1 / 1 / 4 / 6;
+    z-index: 10;
 }
 
 .grid-item-03 {

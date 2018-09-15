@@ -6,7 +6,7 @@ body {
 }
 
 .flex-container {
-	display: flex; /*tüm flex-box propertyleri için flex veya inline-flex yazılır*/
+	display: flex; /*inline-flex didnt work for flex-grow prop*/
 	border: solid 4px #000;
 }
 
@@ -15,8 +15,7 @@ body {
 	font-size: 1.2em;
 	padding: 1em;
 	text-align: center;
-    flex-grow: 1;
-	/* default value is 0 */
+    flex-grow: 1; /* default value is 0 */
 }
 
 .flex-item-01 {

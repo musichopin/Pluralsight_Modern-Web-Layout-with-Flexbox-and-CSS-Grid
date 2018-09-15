@@ -17,8 +17,7 @@ body {
 	font-size: 1.2em;
 	padding: 1em;
 	text-align: center;
-    flex: 1; /* flex-grow ile aynı değil */
-	/* float, clear, width yerine */
+    flex: 1; /*shorthand 4 flex-grow: 1 flex-shrink:1 flex-basis: 0% */
 }
 
 .item:nth-child(even) {

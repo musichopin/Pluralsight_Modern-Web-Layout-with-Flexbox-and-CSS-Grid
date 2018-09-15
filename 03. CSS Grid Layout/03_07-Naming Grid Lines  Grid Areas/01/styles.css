@@ -17,38 +17,35 @@ h1 {
 /*for overall page layout*/
 .grid-container {
     display: grid;
-    height: calc(100vh - 2em); /*calc is a specific function*/
-    /*we can refer to our grid lines with names
-    it might be helpful for creating overall page layout.*/
-    grid: [main-content-start] 1fr 
+    height: calc(100vh - 2em); /*calc is a specific css function*/
+/*we can refer to our grid lines with names.
+it might be helpful for creating overall page layout.*/
+    grid: 13% 1em 85% / /*alt1*/
+          [main-content-start] 2.5fr 
           [main-content-end] 1em 
-          [sidebar-start] 25% 
-          [sidebar-end] / 
-          6em 1em 1fr;
-          /*1fr is one fractional unit, which is a way of saying 
-            the remaining space in the element.*/
+          [sidebar-start] 1fr 
+          [sidebar-end]; /*[sidebar-end] denmese de olur*/
 }
 
 .grid-item-content {
     background-color: #9BC850;
     grid-row: 3 / 4; 
-    /*3. grid line'dan 4. grid line'a uzadığı için 
-    container ne kadar uzarsa item da o kadar uzar*/
     grid-column: main-content-start / main-content-end;
-    /*main-content-end yerine main-content-start dense de sonuç değişmezdi*/
+    /*grid-column: 1 / 2;*/ /*alt*/
 }
 
 .grid-item-sidebar {
     background-color: #9BC850;
     grid-row: 3 / 4;
     grid-column: sidebar-start / sidebar-end; 
-    /*sidebar-end yerine 3 veya 4 de denebilirdi*/
+    /*grid-column: 3 / 4;*/ /*alt*/
 }
 
 .grid-item-header{
     background-color: #A62E5C;
     grid-row: 1 / 2;
     grid-column: main-content-start / sidebar-end;
+    /*grid-column: 1 / 4;*/ /*alt*/
 }
 
 .grid-item {
@@ -63,4 +60,9 @@ h1 {
 .grid-item strong {
 	display: block;
 	font-size: 130%;  
-}	
+}
+/*alt1: sadeleştirmek adına grid-gap kullanılabilir (grid-item-sidebar ve
+grid-item-content selectorlerindeki grid-row ve grid-column prop değiştirilmeli):
+13% 85% / [main-content-start] 2.5fr [sidebar-start] 1fr [sidebar-end]
+grid-gap:1em
+*/

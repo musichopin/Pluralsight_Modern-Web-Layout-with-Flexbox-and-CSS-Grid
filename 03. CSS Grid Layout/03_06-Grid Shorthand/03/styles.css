@@ -19,9 +19,9 @@ body {
 	padding: 1em;
     overflow: hidden;
 	text-align: center;
-    grid-area: 2 / 2 / 3 / 4; /*row -height- start/column -width- start/row end/column end values*/
-    /*grid ile grid-area'nın sırası farklı*/
-    /*instead of grid-row-start, grid-column-start, grid-row-end and grid-column-end properties*/
+    grid-area: 1 / 2 / 4 / 3;
+/*shorthand prop 4 grid-row-start, grid-column-start, grid-row-end 
+and grid-column-end properties*/
 }
 
 .grid-item strong {

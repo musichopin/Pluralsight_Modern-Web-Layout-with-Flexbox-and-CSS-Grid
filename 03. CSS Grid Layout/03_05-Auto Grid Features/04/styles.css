@@ -10,11 +10,6 @@ body {
     display: inline-grid;
     grid-template-columns: 10em 6em 6em 6em; 
     grid-template-rows: 6em 6em; 
-    /*8 grid items for 8 (4x2) explicit grid cells. 
-    implicit grid lines were created for the 9th item we created*/
-    /*implicit grid lines are created without defining grid template 
-    rows and grid template columns.
-    They are created with additional grid items*/
 }
 
 .grid-item {

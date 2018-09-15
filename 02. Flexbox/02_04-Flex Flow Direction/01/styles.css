@@ -7,7 +7,7 @@ body {
 
 .flex-container {
 	display: inline-flex;
-	flex-direction: column-reverse; /*row-reverse, row, column*/
+	flex-direction: column-reverse; /*row-reverse, row (default), column*/
 	border: solid 4px #000;
 }
 

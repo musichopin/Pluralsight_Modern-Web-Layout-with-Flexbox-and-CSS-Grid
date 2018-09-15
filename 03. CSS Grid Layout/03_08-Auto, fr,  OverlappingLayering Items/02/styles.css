@@ -9,8 +9,8 @@ body {
 	border: solid 4px #000;
     display: grid;
     grid-template-columns: 6em 1fr 2fr; 
-    /*grid-item-2 ile grid-item-3 arasında 1'e 2 oranında bölünür kalan boşluk*/
-    /*grid-template-rows belirtilmediği için yükseklik otomatik*/
+/*grid-item-2 ile grid-item-3 arasında 1'e 2 oranında bölünür kalan boşluk*/
+/*grid-template-rows belirtilmediği için row auto olur def olarak*/
 }
 
 .grid-item {

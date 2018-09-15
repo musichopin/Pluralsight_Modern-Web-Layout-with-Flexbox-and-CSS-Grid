@@ -9,7 +9,7 @@ body {
 	border: solid 4px #000;
     display: inline-grid;
     /*grid-template-columns: 6em 6em 6em 6em;*/
-    grid-template-columns: 10em 6em 6em 6em; /*items within the column adjust the width*/
+    grid-template-columns: 10em 6em 6em 6em;
     grid-template-rows: 6em 6em;
 }
 
@@ -24,10 +24,6 @@ body {
 
 .grid-item-01 {
     background-color: #A62E5C;
-    /*we may want our grid items automatically (implicitly) placed into cells on a grid
-    rather than manually (explicitly) placing items into rows and columns.
-    if we don't declare item position on a grid, 
-    system would use grid auto placement algorithm to automatically size and place items */
 }
 
 .grid-item-02 {

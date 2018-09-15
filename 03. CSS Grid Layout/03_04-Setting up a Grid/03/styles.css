@@ -26,9 +26,8 @@ body {
     grid-column-end: 3;*/
     /*grid-column-start: 3;
     grid-column-end: 4;*/
-    grid-column-start: 3; /* 3 column spanding: item spans across the 2nd and 3rd column as well as the 2nd gutter*/
-    grid-column-end: 6; /*6 dahil değil*/
-    /*we place grid items into these areas (defined by height and width) we define*/
+    grid-column-start: 3; /*starts from 3*/
+    grid-column-end: 6; /*6 not included*/
 }
 
 .grid-item strong {

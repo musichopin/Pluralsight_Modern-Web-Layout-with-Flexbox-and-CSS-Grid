@@ -23,20 +23,23 @@ img {
 /*for image gallery in grid format*/
 .grid-container {
     display: grid;
-    grid: [image-column] 1fr /*ilk resim yerleşir; toplamda 1 + 3 img*/
+    grid: 5.4em 1em [image-row] 1fr /*başlık ve ilk resim*/
+          repeat(2, [gutter] 1em [image-row] 1fr)
+          / [image-column] 1fr /*ilk resim yerleşir*/
           repeat(3, [gutter] 1em [image-column] 1fr)
-          [image-column-end] /
-          5.4em 1em [image-row] 1fr /*başlık ve ilk resim yerleşir*/
-          repeat(2, [gutter] 1em [image-row] 1fr);
-          /*we can also create grid lines by name and then 
-          refer to them by numbers with grid items*/
+          [image-column-end];
+/*we can also create grid lines using same name and then refer to them by 
+numbers with grid items below*/
 }
 
 .grid-item-header {
     background-color: #A62E5C;
     color: #fff;
     grid-column: image-column 1 / image-column-end ; 
-    /*image-column-end yerine image-column 5 denebilirdi*/
+    /*grid-column: 1 / 8*/ /*alt*/
+    /*grid-column: image-column 1 / gutter 4*/ /*alt2*/
+    /*grid-column: image-column 1 / image-column 5*/ /*alt3*/
+    /*grid-column: image-column 1 / random text*/ /*alt4*/
     grid-row: 1 / 2; /*spans around from 5.4em to 1em*/
 }
     
@@ -84,7 +87,6 @@ img {
 .grid-item-image-09 {
     grid-column: image-column 1 / gutter 1;
     grid-row: image-row 3 / gutter 3; 
-    /*gutter 3 yerine image-row-end dense de olurdu*/
 }
 
 .grid-item-image-10 {

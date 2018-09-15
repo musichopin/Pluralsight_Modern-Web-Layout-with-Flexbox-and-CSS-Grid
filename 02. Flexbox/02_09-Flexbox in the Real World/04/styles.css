@@ -12,25 +12,26 @@ body {
     padding: 1em;
     height: 100vh;
     display: flex;
-	flex-direction: column; /*işlevini anlamak önemli*/
+	flex-direction: column;/*flex-itemları 3 rowa ayırır 
+    (header, main ve footer için)*/
 }
 
 main {
-	/* flex-box might also be used to layout the page */
+	/* flex-box might also be used to give layout */
     height: 100%;
     display: flex;
 	/* body'nin flex-item'ı iken nav, article ve aside'ın flex-container'ı */
 }
 
-article {
-    background-color: #675BA7;
+article { /*main content*/
+    background-color: lightblue;
     flex: 2 2 12em;
     order: -1;
 }
 
 nav,
 aside {
-    /*flex: 1;*/
+    flex: 1; /* shorthand 4 flex-grow: 1 flex-shrink:1 flex-basis: 0% */
 }
 
 /* responsiveness added, we stack items when they would break */
@@ -50,10 +51,10 @@ h1 {
 }
 
 header,
-footer,
 nav,
 article,
-aside {
+aside,
+footer {
     box-sizing: border-box;
 	padding: 1em;
     text-align: center;

@@ -15,9 +15,8 @@ body {
     padding: 1em;
     height: 20em;
     /*align-items: flex-start;*/
-    /*align-items: flex-end;*/
-    align-items: center;
-	/* we can easily align items vertically */
+    align-items: flex-end;/* we can easily align items vertically */
+    /*align-items: center;*/
 }
 
 .item {

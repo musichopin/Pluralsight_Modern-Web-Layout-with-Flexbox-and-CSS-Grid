@@ -8,8 +8,12 @@ body {
 .grid-container {
 	border: solid 4px #000;
     display: inline-grid;
-    grid: 10em 6em 6em 6em / 6em 6em; /*column values/row values*/
-    /*instead of grid-template-column and grid-template-row properties*/
+    grid: 10em 6em 6em 6em / 6em 6em; 
+    /*shorthand prop 4 grid-template-rows / grid-template-columns*/
+    /*
+grid container için grid -> grid-template-rows ile grid-template-columns
+grid items için grid-area -> grid-row ile grid-column -> grid-row-start ve grid-row-end ile grid-column-start ve grid-column-end
+    */
 }
 
 .grid-item {

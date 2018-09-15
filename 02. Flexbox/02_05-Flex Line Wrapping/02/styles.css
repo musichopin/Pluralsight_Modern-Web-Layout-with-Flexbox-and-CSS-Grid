@@ -8,14 +8,10 @@ body {
 .flex-container {
 	display: flex;
 	flex-flow: row wrap;
-	/* items wrap in rows when there's not enough room within container */
-	/*flex-flow: row-reverse wrap-reverse;
-	row-reverse, row'un tersinden başlarken wrap-reverse x eksenine göre simetri alır.
-	flex-flow, flex-direction ile flex-wrap'in birleşimidir */
+/*flex-flow property is a shorthand property for flex-direction and flex-wrap*/
 	border: solid 4px #000;
 	width: 55%;
 	height: 30em;
-	/* flex-wrap, flex-containerın dimensionı belli ise önem kazanır */
 }
 
 .flex-item {

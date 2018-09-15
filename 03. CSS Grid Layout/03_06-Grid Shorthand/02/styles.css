@@ -19,10 +19,8 @@ body {
 	padding: 1em;
     overflow: hidden;
 	text-align: center;
-    grid-column: 2 / 4; /*column start/column end values*/
-    /*instead of grid-column-start and grid-column-end properties*/
-    grid-row: 2 / 3; /*row start/row end values*/
-    /*instead of grid-row-start and grid-row-end properties*/
+    grid-column: 2 / 3; /*grid-column-start/grid-column-end*/
+    grid-row: 2 / 4; /*grid-row-start/grid-row-end*/
 }
 
 .grid-item strong {

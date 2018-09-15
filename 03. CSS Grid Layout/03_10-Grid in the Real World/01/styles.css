@@ -23,7 +23,7 @@ h1 {
 	text-align: center;
 }
 
-/*!!!grid for page layout!!!*/
+/*grid for page layout*/
 .grid-item-header {
     background-color: #A62E5C;
     grid-area: header;
@@ -51,10 +51,8 @@ h1 {
 
 .grid-container {
     display: grid;
-    height: calc(100vh - 2em);
+    height: calc(100vh - 2em);/*alt: height: 100vh; box-sizing:border-box;*/
     grid: 20% 1em 1fr 1em 20% / 4.4em 1em 1fr 1em 4.4em;
-    /*grid-item isimle belirtildiği için grid-container'ın 
-    isimle belirtilmesi gereksiz olur*/
     grid-template-areas: 
     "header header header header header"
     ". . . . ."
@@ -66,7 +64,7 @@ h1 {
 @media screen and (max-width: 590px) {
     
     .grid-container {
-        grid: 1fr 1em 30% / 4.4em 1em 3.6em 1em 1fr 1em 4.4em;
+        grid: 4.4em 1em 3.6em 1em 1fr 1em 4.4em / 1fr 1em 30%;
         grid-template-areas:
         "header header header"
         ". . ."
@@ -82,7 +80,7 @@ h1 {
 @media screen and (max-width: 450px) {
     
     .grid-container {
-        grid: 1fr / 4.4em 1em 3.6em 1em 1fr 1em 3.6em 1em 4.4em;
+        grid: 4.4em 1em 3.6em 1em 1fr 1em 3.6em 1em 4.4em / 1fr;
         grid-template-areas:
         "header"
         "."

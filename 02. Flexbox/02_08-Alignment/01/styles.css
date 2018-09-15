@@ -9,7 +9,7 @@ body {
 	display: flex;
 	border: solid 4px #000;
     height: 30em;
-    /*justify-content: flex-start;*/
+    /*justify-content: flex-start;*/ /*default*/
     /*justify-content: flex-end;*/
     /*justify-content: center;*/
     /*justify-content: space-between;*/

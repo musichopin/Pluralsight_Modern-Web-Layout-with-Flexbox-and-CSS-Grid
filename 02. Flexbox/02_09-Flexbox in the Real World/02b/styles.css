@@ -14,8 +14,7 @@ body {
     background-color: #A62E5C;
 	color: #fff;
     box-sizing: border-box;
-    flex: 1; /*flex: 1 denmeseydi uzunluk contente göre verilecekti*/
-	/* flex ile flex-grow aynı şeyler değil */
+    flex: 1;
 	font-size: 1.2em;
 	padding: 1em;
 }

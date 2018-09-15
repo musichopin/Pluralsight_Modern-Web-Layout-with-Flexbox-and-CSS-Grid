@@ -10,6 +10,8 @@ body {
 	border: solid 4px #000;
     height: 36.72em;
     flex-wrap: wrap;
+	/*flex-direction: column;*/ 
+	/*flex-direction: row;*/ /* default */
     /*align-content: flex-start;*/
     /*align-content: flex-end;*/
     /*align-content: center;*/
@@ -21,11 +23,11 @@ body {
 
 .flex-item {
 	color: #fff;
-    box-sizing: border-box;
+    box-sizing: border-box; /*important 2 place 3 flex-items inside container*/
 	font-size: 1.2em;
 	padding: 1em;
 	text-align: center;
-    width: 33.33333%; /*her rowda 3 item olma sebebi*/
+    width: 33.33333%; /*her rowda 3 flex-item olma sebebi*/
 }
 
 .flex-item-01,

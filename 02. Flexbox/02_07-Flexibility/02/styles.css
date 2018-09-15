@@ -16,14 +16,12 @@ body {
 	padding: 1em;
 	text-align: center;
     width: 25em;
-	/* flex-items' default shrink value is 1
-	and they automatically shrink*/
+/* flex-items' default shrink value is 1 and they automatically shrink*/
 }
 
 .flex-item-01 {
 	background-color: #A62E5C;
     flex-shrink: 0;
-	/* doesn't shrink */
 }
 
 .flex-item-02 {

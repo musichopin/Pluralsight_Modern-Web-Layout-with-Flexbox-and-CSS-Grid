@@ -6,7 +6,7 @@ body {
 }
 
 body {
-    display: flex;
+    display: flex;/*flexbox makes height straight no matter what content is*/
     padding: 1em;
 }
 
@@ -14,8 +14,7 @@ body {
     background-color: #A62E5C;
 	color: #fff;
     box-sizing: border-box;
-    flex: 1;
-	/* contente göre değil, eşit yükseklik verir */
+    flex: 1; /*flex 1 denmeseydi width contente göre değişecekti*/
 	font-size: 1.2em;
 	padding: 1em;
 }

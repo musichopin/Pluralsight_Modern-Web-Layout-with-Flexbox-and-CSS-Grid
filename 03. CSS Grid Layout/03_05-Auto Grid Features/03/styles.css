@@ -28,7 +28,7 @@ body {
 .grid-item-02 {
 	background-color: #9BC850;
     order: 1; /*default order: 0*/
-    /*if we just want to change the order of grid items without resizing*/
+    /*to change the order of grid items without resizing*/
 }
 
 .grid-item-03 {
@@ -41,14 +41,10 @@ body {
 
 .grid-item-05 {
 	background-color: #F15B2A;
-	/*sometimes we find it necessary to mix some auto-place 
-	items and explicitly positioning*/
 	grid-column-start: 1;
 	grid-column-end: 2;
 	grid-row-start: 1;
 	grid-row-end: 3;
-	/*it moves to the location we defined and make other 
-	items wrap around accordingly*/
 	padding-top: 3.5em; /* texti ortalar */
 }
 

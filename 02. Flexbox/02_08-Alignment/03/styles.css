@@ -9,7 +9,7 @@ body {
 	display: flex;
 	border: solid 4px #000;
     height: 36.72em;
-    align-items: center;
+    align-items: center; 
 }
 
 .flex-item {
@@ -21,7 +21,7 @@ body {
 
 .flex-item-01 {
 	background-color: #A62E5C;
-	align-self: center; /* default */
+	align-self: center; /* needless as flex-container is already center */
 }
 
 .flex-item-02 {
@@ -29,7 +29,7 @@ body {
     padding-top: 2em;
     padding-bottom: 2em;
     align-self: flex-start;
-	/* align-self helps align individual items uniquely */
+/* align-self helps align individual items uniquely */
 }
 
 .flex-item-03 {

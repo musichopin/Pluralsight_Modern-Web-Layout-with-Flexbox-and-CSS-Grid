@@ -16,8 +16,8 @@ body {
 	padding: 1em;
 	text-align: center;
     opacity: 0.8;
-    flex: 0 0 auto;
-	/* flex: flex-grow flex-shrink flex-basis */
+    flex: 0 1 auto;
+	/* flex is short-hand for flex-grow flex-shrink flex-basis */
 }
 
 .flex-item-01 {

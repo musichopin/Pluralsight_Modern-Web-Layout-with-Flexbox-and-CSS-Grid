@@ -8,13 +8,10 @@ body {
 .grid-container {
 	border: solid 4px #000;
     display: grid;
-    grid-template-columns: 6em 1em 6em 1em 6em 1em 6em; 
-    /*1 em: gutter 
-    gutters are simply columns and rows but we avoid placing items on them*/
-    /*we need columns and rows for the items to be placed in=
-    grid-template-columns: width width ...
-    grid-template-rows: height height ...*/
-    
+    /*grid-gap:1em;*/ 
+/*aşağıda 1em ile boşlukları belirtmek yerine grid-gap kullanılabilirdi*/
+    grid-template-columns: 6em 1em 6em 1em 6em 1em 6em;
+/*grid-template-columns specifies no and width of columns in a grid layout*/
 }
 
 .grid-item {

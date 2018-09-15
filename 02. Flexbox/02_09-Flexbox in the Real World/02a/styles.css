@@ -15,7 +15,6 @@ body {
 	color: #fff;
     box-sizing: border-box;
     flex: 1;
-	/* contente göre değil, eşit yükseklik verir */
 	font-size: 1.2em;
 	padding: 1em;
 }

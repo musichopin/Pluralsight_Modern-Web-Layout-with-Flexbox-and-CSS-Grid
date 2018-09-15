@@ -6,7 +6,8 @@ body {
 }
 
 .flex-container {
-	display: inline-flex; /* inline-flex, inline-box a benzerken flex, box'a benzer */
+	display: inline-flex; 
+	/* inline-flex, inline-box a benzerken flex, box'a benzer */
 	border:solid 4px #000;
 }
 

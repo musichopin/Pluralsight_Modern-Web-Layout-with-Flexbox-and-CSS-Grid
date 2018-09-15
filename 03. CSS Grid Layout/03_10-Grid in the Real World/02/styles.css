@@ -14,12 +14,12 @@ h1 {
     padding: 0;
 }
 
-/*!!!grid for laying out gallery of images with varying widths!!!*/
+/*grid for laying out gallery of images with varying widths*/
 .grid-container {
     display: grid;
     height: calc(100vh - 2em);
     grid-template-columns: 25% 25% 25% 25%;
-    grid-auto-flow: dense;
+    grid-auto-flow: dense; /*we fill the gaps w/ random pics w/ dis prop*/
 }
 
 .grid-item {
@@ -31,7 +31,9 @@ h1 {
 	text-align: center;
 }
 
-.grid-item-header {
+.grid-item-header { 
+    /*doesnt look right on firefox: we may need to add grid-template-rows: 
+    4em auto auto auto prop on div w/ grid-container class*/
     background-color: #A62E5C;
     grid-column: span 4;
 }
@@ -44,7 +46,7 @@ h1 {
 }
 
 .gallery-item-wide {
-    grid-column: span 2;
+    grid-column: span 2; /*starts from any place and spans across 2 cols*/
 }
 
 .gallery-item-label {

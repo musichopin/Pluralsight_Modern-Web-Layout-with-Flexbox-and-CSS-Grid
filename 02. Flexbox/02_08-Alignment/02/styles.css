@@ -12,7 +12,6 @@ body {
     /*align-items: flex-start;*/
     /*align-items: flex-end;*/
     /*align-items: center;*/
-    /*align-items: baseline;*/
     align-items: stretch; /* default */
     /*flex-direction: column;*/ 
 	/*flex-direction: row;*/ /* default */
